@@ -39,56 +39,56 @@ export class CanvasComponent implements OnInit {
 
   createContextAnalysis() {
     this.contextAnalysis.key = 'context';
-    this.contextAnalysis.srcImg = '../../../assets/analysis.svg';
+    this.contextAnalysis.srcImg = 'assets/analysis.svg';
     this.contextAnalysis.title = 'Análise de contexto';
     this.contextAnalysis.type = TypeCanvas.EXPLORACAO;
   }
 
   createBenefitsAndJustifications() {
     this.benefitsAndJustifications.key = 'benefist';
-    this.benefitsAndJustifications.srcImg = '../../../assets/like.svg';
+    this.benefitsAndJustifications.srcImg = 'assets/like.svg';
     this.benefitsAndJustifications.title = 'Benefícios e justificativas';
     this.benefitsAndJustifications.type = TypeCanvas.EXPLORACAO;
   }
 
   createPeople() {
     this.peoples.key = 'peoples';
-    this.peoples.srcImg = '../../../assets/people.svg';
+    this.peoples.srcImg = 'assets/people.svg';
     this.peoples.title = 'Personas';
     this.peoples.type = TypeCanvas.EXPLORACAO;
   }
 
   createHypotesis() {
     this.hypothesis.key = 'hypothesis';
-    this.hypothesis.srcImg = '../../../assets/path.svg';
+    this.hypothesis.srcImg = 'assets/path.svg';
     this.hypothesis.title = 'Hipóteses';
     this.hypothesis.type = TypeCanvas.EXPLORACAO;
   }
 
   createRestrictions() {
     this.restrictions.key = 'restrictions';
-    this.restrictions.srcImg = '../../../assets/restriction.svg';
+    this.restrictions.srcImg = 'assets/restriction.svg';
     this.restrictions.title = 'Premissas e restrições';
     this.restrictions.type = TypeCanvas.SOLUCAO;
   }
 
   createSmart() {
     this.smart.key = 'smart';
-    this.smart.srcImg = '../../../assets/target.svg';
+    this.smart.srcImg = 'assets/target.svg';
     this.smart.title = 'Objetivo S.M.A.R.T';
     this.smart.type = TypeCanvas.SOLUCAO;
   }
 
   createBacklog() {
     this.backlog.key = 'backlog';
-    this.backlog.srcImg = '../../../assets/backlog.svg';
+    this.backlog.srcImg = 'assets/backlog.svg';
     this.backlog.title = 'Backlog';
     this.backlog.type = TypeCanvas.SOLUCAO;
   }
 
   createExperiment() {
     this.experiment.key = 'experiment';
-    this.experiment.srcImg = '../../../assets/puzzle.svg';
+    this.experiment.srcImg = 'assets/puzzle.svg';
     this.experiment.title = 'Área de experimentação';
     this.experiment.type = TypeCanvas.EXPERIMENTO;
   }
