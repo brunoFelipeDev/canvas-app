@@ -1,6 +1,7 @@
 .canvas {
   height: 100%;
   padding: 50px 15px;
+  animation: transition-initial 1s ease-in-out alternate;
 
   .title {
     align-items: center;
@@ -104,5 +105,14 @@ input {
     font-size: 16px;
   color: white;
   text-decoration: underline;
+  }
+}
+
+@keyframes transition-initial {
+  0% {
+    transform: translateY(-70%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0%) rotate(0deg);
   }
 }
