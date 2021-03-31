@@ -74,21 +74,21 @@ export class CanvasComponent implements OnInit {
 
   createSmart() {
     this.smart.key = 'smart';
-    this.smart.srcImg = '/assets/target.svg';
+    this.smart.srcImg = 'assets/target.svg';
     this.smart.title = 'Objetivo S.M.A.R.T';
     this.smart.type = TypeCanvas.SOLUCAO;
   }
 
   createBacklog() {
     this.backlog.key = 'backlog';
-    this.backlog.srcImg = '/assets/backlog.svg';
+    this.backlog.srcImg = 'assets/backlog.svg';
     this.backlog.title = 'Backlog';
     this.backlog.type = TypeCanvas.SOLUCAO;
   }
 
   createExperiment() {
     this.experiment.key = 'experiment';
-    this.experiment.srcImg = '/assets/puzzle.svg';
+    this.experiment.srcImg = 'assets/puzzle.svg';
     this.experiment.title = 'Área de experimentação';
     this.experiment.type = TypeCanvas.EXPERIMENTO;
   }
