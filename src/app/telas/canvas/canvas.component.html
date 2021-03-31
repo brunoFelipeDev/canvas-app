@@ -11,7 +11,7 @@
             (click)="isAlterTitleVersion = true;" [ngClass]="titleVersion === '' ? 'no-title' : ''">{{
             titleVersion !== '' ? titleVersion : ' Digite o título/versão do projeto' }}
             <button type="button" class="btn">
-              <img src="assets/edit.svg" width="22px"></button> </span>
+              <img src="assets/editing.svg" width="22px"></button> </span>
           <input type="text" class="form-control" *ngIf="isAlterTitleVersion" [(ngModel)]="titleVersion"
             (keyup.enter)="saveTitleVersion()" (focusout)="saveTitleVersion()" autofocus>
         </span>
