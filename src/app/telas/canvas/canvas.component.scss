@@ -1,0 +1,87 @@
+.canvas {
+  height: 100%;
+  padding: 50px 15px;
+
+  .title {
+    align-items: center;
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 22px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.version {
+  background-color: #002c7a;
+  padding: 12px;
+  border-radius: 10px;
+  color: rgb(226, 226, 226);
+
+  span {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.cards {
+  height: calc(100vh - 115px);
+  padding: 30px 0 0 10px;
+}
+
+@media (max-width: 1199px) {
+  .cards {
+    height: calc(100vh - 141px);
+  }
+
+  .margin-card-top {
+    padding-top: 0px !important;
+  }
+
+  app-card {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 495px) {
+  .canvas {
+    .title {
+      .logo {
+        margin-bottom: 10px;
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.margin-card-top {
+  padding-top: 25px;
+}
+
+app-card {
+  padding-left: 5px !important;
+}
+
+.no-title {
+  font-style: italic;
+  font-weight: 200;
+}
+
+button {
+  width: 40px;
+  height: 36px;
+  padding-bottom: 4px;
+  margin: -6px 0px 0px 2px;
+}
+
+input {
+  margin: 0 10px 0 15px;
+}

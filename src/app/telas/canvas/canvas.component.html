@@ -1,0 +1,58 @@
+<div class="canvas">
+  <div class="row title">
+    <div class="col-12 col-lg-7 logo">
+      <img src="../../../assets/logo-igti.png" width="110px" />
+      <span> CANVAS DO PROJETO APLICADO </span>
+    </div>
+    <div class="col-12 col-lg-5">
+      <div class="version">
+        <span> Título/Versão:
+          <span *ngIf="!isAlterTitleVersion" style="font-size: 16px; margin-left: 12px; cursor: pointer;"
+            (click)="isAlterTitleVersion = true;" [ngClass]="titleVersion === '' ? 'no-title' : ''">{{
+            titleVersion !== '' ? titleVersion : ' Digite o título/versão do projeto' }}
+            <button type="button" class="btn">
+              <img src="../../../assets/edit.svg" width="22px"></button> </span>
+          <input type="text" class="form-control" *ngIf="isAlterTitleVersion" [(ngModel)]="titleVersion"
+            (keyup.enter)="saveTitleVersion()" (focusout)="saveTitleVersion()" autofocus>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="cards row">
+    <div class="col-12 col-xl-2">
+      <div class="row min-h-50 ">
+        <app-card class="col-12 col-xl-12" [config]="contextAnalysis"></app-card>
+      </div>
+      <div class="row min-h-50 margin-card-top">
+        <app-card class="col-12 col-xl-12" [config]="benefitsAndJustifications"></app-card>
+      </div>
+    </div>
+
+    <div class="col-12 col-xl-2">
+      <div class="row min-h-50 ">
+        <app-card class="col-12 col-xl-12" [config]="peoples"></app-card>
+      </div>
+      <div class="row min-h-50 margin-card-top">
+        <app-card class="col-12 col-xl-12" [config]="hypothesis"></app-card>
+      </div>
+    </div>
+    <div class="col-12 col-xl-2">
+      <div class="row min-h-50 ">
+        <app-card class="col-12 col-xl-12" [config]="restrictions"></app-card>
+      </div>
+      <div class="row min-h-50 margin-card-top">
+        <app-card class="col-12 col-xl-12" [config]="smart"></app-card>
+      </div>
+    </div>
+    <div class="col-12 col-xl-2">
+      <div class="row h-100">
+        <app-card class="col-12 col-xl-12" [config]="backlog"></app-card>
+      </div>
+    </div>
+    <div class="col-12 col-xl-4">
+      <div class="row h-100">
+        <app-card class="col-12 col-lg-12" [config]="experiment"></app-card>
+      </div>
+    </div>
+  </div>
+</div>

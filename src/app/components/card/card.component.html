@@ -1,0 +1,18 @@
+<div [style.background-color]="config.getTheme()" class="card">
+  <p class="title"> <img src="{{config.srcImg}}">{{config.title | uppercase }} </p>
+  <div class="items">
+    <div class="item" *ngFor="let item of items">
+      <div> {{item.description}}</div>
+      <button type="button" class="btn" (click)="deleteItem(item)">
+        <img src="../../../assets/delete.svg" style="width: 20px;"></button>
+    </div>
+  </div>
+  <div style="display: flex; margin-top: 20px;" *ngIf="isNewItem">
+    <input type="text" class="form-control" [(ngModel)]="item.description" (keyup.enter)="addItem()" #input>
+    <button type="button" class="btn" (click)="addItem()">
+      <img src="../../../assets/add.svg"></button>
+  </div>
+  <div *ngIf="!isNewItem" style="text-align: center;">
+    <button type="button" class="btn btn-add-item" (click)="activeAddItem()">Adicionar item +</button>
+  </div>
+</div>

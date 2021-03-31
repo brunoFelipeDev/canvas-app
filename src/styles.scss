@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap");
+
+body {
+  background-color: #000d63 !important;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+}
+
+input {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 8px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.min-h-50 {
+  min-height: 50%;
+}
+
+@media (max-width: 1199px) {
+  .min-h-50 {
+    min-height: auto;
+  }
+}
