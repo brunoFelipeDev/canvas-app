@@ -18,6 +18,8 @@ export class CanvasComponent implements OnInit {
   smart = new ConfigsModel();
   backlog = new ConfigsModel();
   experiment = new ConfigsModel();
+  solution = new ConfigsModel();
+  lessons = new ConfigsModel();
 
   isAlterTitleVersion: boolean = false;
   titleVersion: string = '';
@@ -35,6 +37,8 @@ export class CanvasComponent implements OnInit {
     this.createSmart();
     this.createBacklog();
     this.createExperiment();
+    this.createSolution();
+    this.createLessonLearned();
   }
 
   createContextAnalysis() {
@@ -91,6 +95,20 @@ export class CanvasComponent implements OnInit {
     this.experiment.srcImg = 'assets/puzzle.svg';
     this.experiment.title = 'Área de experimentação';
     this.experiment.type = TypeCanvas.EXPERIMENTO;
+  }
+
+  createSolution() {
+    this.solution.key = 'solution';
+    this.solution.srcImg = 'assets/solution.svg';
+    this.solution.title = 'Solução';
+    this.solution.type = TypeCanvas.EXPERIMENTO;
+  }
+
+  createLessonLearned() {
+    this.lessons.key = 'leassons';
+    this.lessons.srcImg = 'assets/post-it.svg';
+    this.lessons.title = 'Lições aprendidas';
+    this.lessons.type = TypeCanvas.EXPERIMENTO;
   }
 
   getTitleVersion() {

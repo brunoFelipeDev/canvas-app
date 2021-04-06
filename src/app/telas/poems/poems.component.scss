@@ -31,9 +31,9 @@
   }
 }
 
-.cards {
-  height: calc(100vh - 150px);
+.cards-one {
   padding: 30px 0 0 10px;
+  min-height: 60vh;
 }
 
 @media (max-width: 1199px) {
@@ -123,4 +123,18 @@ input {
   padding: 10px 0px;
   font-size: 22px;
   font-weight: 200;
+}
+
+.title-poems {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+
+  span {
+    padding: 18px 30px;
+    background: #0483A0;
+    border-radius: 15px;
+  }
 }

@@ -31,7 +31,6 @@
         <app-card class="col-12 col-xl-12" [config]="benefitsAndJustifications"></app-card>
       </div>
     </div>
-
     <div class="col-12 col-xl-2">
       <div class="row min-h-50 ">
         <app-card class="col-12 col-xl-12" [config]="peoples"></app-card>
@@ -54,8 +53,15 @@
       </div>
     </div>
     <div class="col-12 col-xl-4">
-      <div class="row h-100">
+      <div class="row h-50">
         <app-card class="col-12 col-lg-12" [config]="experiment"></app-card>
+      </div>
+      <div class="h-50">
+        <span class="result-finaly"> Resultado final </span>
+        <div style="padding-top: 50px;" class="row h-100 result">
+          <app-card class="col-12 col-lg-6" [config]="solution"></app-card>
+          <app-card class="col-12 col-lg-6" [config]="lessons"></app-card>
+        </div>
       </div>
     </div>
   </div>

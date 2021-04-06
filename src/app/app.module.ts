@@ -8,13 +8,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CardComponent } from './components/card/card.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './telas/home/home.component';
+import { PoemsComponent } from './telas/poems/poems.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CanvasComponent,
     CardComponent,
-    HomeComponent
+    HomeComponent,
+    PoemsComponent
   ],
   imports: [
     BrowserModule,
